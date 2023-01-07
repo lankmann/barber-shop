@@ -1,0 +1,109 @@
+.poster {
+  position: relative;
+  width: 100%;
+}
+
+.poster-content {
+  display: flex;
+  gap: 100px;
+  padding: 100px 40px;
+  max-width: 1250px;
+
+  .scissors {
+    width: 40%;
+    color: white;
+    font-size: 360px;
+    transition: 600ms;
+    transform-origin: center;
+  }
+
+  #rotate {
+    transform: rotate(90deg);
+  }
+
+  #rotate-hover {
+    transform: rotate(0deg);
+  }
+
+  // .img-group {
+  //   display: flex;
+  //   max-width: 40%;
+  //   position: relative;
+  //   transform: translateY(20px);
+
+  //   .img {
+  //     position: absolute;
+  //     height: 300px;
+  //     border: solid 1px white;
+  //     border-radius: 10px;
+  //     transform-origin: bottom;
+  //     transition: transform 600ms;
+  //     box-shadow: 6px 6px 0 rgba(0, 0, 0, 0.262);
+  //   }
+  //   #offset-1 {
+  //     transform: rotate(-5deg);
+  //   }
+  //   #offset-1-hover {
+  //     transform: rotate(-15deg);
+  //   }
+  //   #offset-2 {
+  //     transform: rotate(0deg) translateY(-20px);
+  //   }
+  //   #offset-2-hover {
+  //     transform: rotate(30deg) translateY(-50px);
+  //   }
+  //   #offset-3 {
+  //     transform: rotate(3deg) translateY(10px);
+  //   }
+  //   #offset-3-hover {
+  //     transform: rotate(65deg) translateY(10px);
+  //   }
+  // }
+
+  .check-in-container {
+    max-width: 55%;
+    color: white;
+    font: 400 24px/30px Roboto, "Helvetica Neue", sans-serif;
+    div {
+      font: 500 52px/60px Roboto, "Helvetica Neue", sans-serif;
+    }
+    p {
+      line-height: 36px;
+    }
+    .button-row {
+      margin-top: 10px;
+  
+      .side {
+        margin-left: 20px;
+        min-width: 120px;
+        height: 56px;
+        border: none;
+        color: #fff;
+        font-size: 24px;
+        font-weight: 500;
+        background-color: #0004;
+        cursor: pointer;
+        transition: 600ms;
+        border-radius: 10px;
+      }
+      .side:hover {
+        background-color: #0009;
+      }
+      .main {
+        min-width: 220px;
+        height: 56px;
+        border: none;
+        border-radius: 10px;
+        color: #ff5a00;
+        font-size: 24px;
+        font-weight: 500;
+        cursor: pointer;
+        background-color: white;
+        transition: 600ms;
+      }
+      .main:hover {
+        background-color: rgba(255, 255, 255, 0.845);
+      }
+    }
+  }
+}

@@ -1,0 +1,60 @@
+section {
+  max-width: 100%;
+  min-height: 200px;
+  background-color: white;
+  padding: 80px 90px;
+
+  .header {
+    color: #424242;
+    font: 500 44px/54px Roboto, "Helvetica Neue", sans-serif;
+    text-align: center;
+    margin: 0;
+  }
+
+  .container {
+    margin: 80px 0 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 10px;
+    row-gap: 10px;
+
+    .card {
+      background-color: #f9f9f9;
+      min-height: 80px;
+      border-radius: 6px !important;
+      padding: 30px;
+
+      .title {
+        font: 300 32px/32px Roboto, "Helvetica Neue", sans-serif;
+        text-align: center;
+        margin: 0;
+      }
+
+      .icon-container {
+        display: flex;
+        justify-content: center;
+        padding: 15px 0 10px;
+        
+        .circle-icon {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: 60px;
+          height: 60px;
+          border-radius: 60px;
+          background-color: white;
+        }
+      }
+
+      .description {
+        font: 300 20px/28px Roboto, "Helvetica Neue", sans-serif;
+        text-align: center;
+        margin: 0;
+      }
+    }
+
+    .img {
+      width: 100%;
+    }
+  }
+}
