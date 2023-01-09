@@ -11,6 +11,10 @@
   box-shadow: 0 4px 0 rgba(0, 0, 0, 0.083);
   z-index: 10;
 
+  .title {
+    margin-right: 12px;
+  }
+
   .spacer {
     flex-grow: 1;
   }
@@ -20,7 +24,15 @@
     color: inherit;
     font-size: 16pt;
     font-weight: 400;
-    margin-left: 60px;
+    margin-left: 40px;
+  }
+
+  @media (max-width: 644px) {
+    padding: 10px;
+
+    #nav-button-group {
+      display: none;
+    }
   }
 
   .social-icon {

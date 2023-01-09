@@ -25,41 +25,6 @@
     transform: rotate(0deg);
   }
 
-  // .img-group {
-  //   display: flex;
-  //   max-width: 40%;
-  //   position: relative;
-  //   transform: translateY(20px);
-
-  //   .img {
-  //     position: absolute;
-  //     height: 300px;
-  //     border: solid 1px white;
-  //     border-radius: 10px;
-  //     transform-origin: bottom;
-  //     transition: transform 600ms;
-  //     box-shadow: 6px 6px 0 rgba(0, 0, 0, 0.262);
-  //   }
-  //   #offset-1 {
-  //     transform: rotate(-5deg);
-  //   }
-  //   #offset-1-hover {
-  //     transform: rotate(-15deg);
-  //   }
-  //   #offset-2 {
-  //     transform: rotate(0deg) translateY(-20px);
-  //   }
-  //   #offset-2-hover {
-  //     transform: rotate(30deg) translateY(-50px);
-  //   }
-  //   #offset-3 {
-  //     transform: rotate(3deg) translateY(10px);
-  //   }
-  //   #offset-3-hover {
-  //     transform: rotate(65deg) translateY(10px);
-  //   }
-  // }
-
   .check-in-container {
     max-width: 55%;
     color: white;
@@ -75,7 +40,7 @@
   
       .side {
         margin-left: 20px;
-        min-width: 120px;
+        padding: 0 20px;
         height: 56px;
         border: none;
         color: #fff;
@@ -90,7 +55,7 @@
         background-color: #0009;
       }
       .main {
-        min-width: 220px;
+        padding: 0 62px;
         height: 56px;
         border: none;
         border-radius: 10px;
@@ -105,5 +70,33 @@
         background-color: rgba(255, 255, 255, 0.845);
       }
     }
+
+    @media (max-width: 644px) {
+      .button-row {
+        .main {
+          padding: 0 30px;
+        }
+        .side {
+          padding: 0 16px;
+        }
+      }
+      div {
+        font: 500 26px/26px Roboto, "Helvetica Neue", sans-serif;
+      }
+      p {
+        font: 400 18px/24px Roboto, "Helvetica Neue", sans-serif;
+        margin-bottom: 25px;
+      }
+    }
   }
+
+  @media (max-width: 1000px) {
+    .scissors {
+      display: none;
+    }
+    .check-in-container {
+      max-width: 100%;
+    }
+  }
+
 }
